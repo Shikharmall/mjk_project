@@ -1,0 +1,1636 @@
+{
+	"info": {
+		"_postman_id": "4ffc4c9f-8305-4700-a4ef-3eb464328b97",
+		"name": "MJK",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://mjk.workfordemo.in/api/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Isha Shah",
+							"type": "default"
+						},
+						{
+							"key": "mobile",
+							"value": "7878787878",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "isha02@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "device_id",
+							"value": "6543345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/signin",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/get-hospital",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/get-hospital",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-hospital?name=ap",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-hospital?name=ap",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-hospital"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ap"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/get-test",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/get-test",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/get-specimen",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/get-specimen",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-specimen"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/get-lab",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/get-lab",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-lab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/files-upload",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/D:/xampp/htdocs/laravel/akashvani/public/image/78cf93378c47424eab4aa332bd9a8d20.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/files-upload",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"files-upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-collection-count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "173|sXcm7RKlD1VKfxG1qlqr0QWf0mhtT3UDGUp0hJmQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-collection-count",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-collection-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-sample-box-item",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "invoice_photo",
+							"value": "2022-12-27-63aa94e828d31.png",
+							"type": "default"
+						},
+						{
+							"key": "scan_code",
+							"value": "356797664",
+							"type": "default"
+						},
+						{
+							"key": "patient",
+							"value": "Isha Patel",
+							"type": "default"
+						},
+						{
+							"key": "type_patient",
+							"value": "Public",
+							"type": "default"
+						},
+						{
+							"key": "type_test_for",
+							"value": "Treatment",
+							"type": "default"
+						},
+						{
+							"key": "no_of_sample",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "specimen_id",
+							"value": "4",
+							"type": "default"
+						},
+						{
+							"key": "test_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "lab_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-sample-box-item",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-sample-box-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/sample-box-item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/sample-box-item",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"sample-box-item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-sample",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sample_meter_name",
+							"value": "Spedometer",
+							"type": "default"
+						},
+						{
+							"key": "sample_meter_photo",
+							"value": "2022-12-27-63aa955743dbf.png",
+							"type": "default"
+						},
+						{
+							"key": "sample_date_time",
+							"value": "02/01/2023, 01:00 PM",
+							"type": "default"
+						},
+						{
+							"key": "collected_from",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "map_area_name",
+							"value": "P.P.Savani Hospital, Varachha Main Rd, opposite Kapodra Police Station, Vishnu Nagar Society, Vishnu Nager, Singanpor, Surat, Gujarat, India",
+							"type": "default"
+						},
+						{
+							"key": "from_latitude",
+							"value": "21.2270149",
+							"type": "default"
+						},
+						{
+							"key": "from_longitude",
+							"value": "72.8213741",
+							"type": "default"
+						},
+						{
+							"key": "kilometer",
+							"value": "80",
+							"type": "default"
+						},
+						{
+							"key": "degree",
+							"value": "10",
+							"type": "default"
+						},
+						{
+							"key": "sample_box_name",
+							"value": "Sample Box",
+							"type": "default"
+						},
+						{
+							"key": "sample_box_photo",
+							"value": "2022-12-27-63aa958d7fa3c.png",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-sample",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-sample"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submit-collection-lab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submit-collection-lab",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submit-collection-lab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-collection-lab?name=Prabhat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-collection-lab?name=Prabhat",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-collection-lab"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Prabhat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-collection-detail",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-collection-detail",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-collection-detail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-collection-hospital?name=sava",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "173|sXcm7RKlD1VKfxG1qlqr0QWf0mhtT3UDGUp0hJmQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-collection-hospital?name=sava",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-collection-hospital"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "sava"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-hospital-sample-collected?id=1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-hospital-sample-collected?id=1",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-hospital-sample-collected"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/lab-collection-point",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/lab-collection-point?id=2",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"lab-collection-point"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-collected-report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lt_name",
+							"value": "Rahul",
+							"type": "default"
+						},
+						{
+							"key": "designation",
+							"value": "Lab Technician",
+							"type": "default"
+						},
+						{
+							"key": "digital_signature",
+							"value": "2022-12-27-63aaac7315876.png",
+							"type": "default"
+						},
+						{
+							"key": "sample_selected_id",
+							"value": "[1,2],15,16]",
+							"type": "default"
+						},
+						{
+							"key": "to_sample_date_time",
+							"value": "02-01-2023 16:30:35",
+							"type": "default"
+						},
+						{
+							"key": "to_kilometer",
+							"value": "150",
+							"type": "default"
+						},
+						{
+							"key": "to_degree",
+							"value": "15",
+							"type": "default"
+						},
+						{
+							"key": "lab_id",
+							"value": "2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-collected-report",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-collected-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/collected-report-lab",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/collected-report-lab",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"collected-report-lab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-submitted-count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-submitted-count",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-submitted-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-collected-report-lab?name=prabhat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-collected-report-lab?name=prabhat",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-collected-report-lab"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "prabhat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-report-detail?id=2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-report-detail?id=2",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-report-detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-lab-sample?id=2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-lab-sample?id=2",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-lab-sample"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-submmitted-sample-images",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sample_id",
+							"value": "16",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"value": "[2023-01-04-63b4fc285e0b5.png, 2023-01-04-63b4fc4689b2c.png]",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-submmitted-sample-images",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-submmitted-sample-images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-sample-images?id=1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-sample-images?id=15",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-sample-images"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "15"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-submitted-collected-report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "lab_id",
+							"value": "2",
+							"type": "default"
+						},
+						{
+							"key": "lt_name",
+							"value": "Rahul",
+							"type": "default"
+						},
+						{
+							"key": "designation",
+							"value": "Lab Technician",
+							"type": "default"
+						},
+						{
+							"key": "digital_signature",
+							"value": "2022-12-27-63aaac7315876.png",
+							"type": "default"
+						},
+						{
+							"key": "sample_selected_id",
+							"value": "[1,2,15,16]",
+							"type": "default"
+						},
+						{
+							"key": "collect_lab_sample_meter_name",
+							"value": "Odometer",
+							"type": "default"
+						},
+						{
+							"key": "collect_lab_sample_meter_photo",
+							"value": "2022-12-27-63aa955743dbf.png",
+							"type": "default"
+						},
+						{
+							"key": "collect_lab_sample_date_time",
+							"value": "04/01/2023, 17:00 PM",
+							"type": "default"
+						},
+						{
+							"key": "collect_lab_kilometer",
+							"value": "180",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-submitted-collected-report",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-submitted-collected-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-collected-report-count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-collected-report-count",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-collected-report-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/collect-submitted-report-lab",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/collect-submitted-report-lab",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"collect-submitted-report-lab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-collect-submitted-report-lab?name=Prabhat",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-collect-submitted-report-lab?name=Prabhat",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-collect-submitted-report-lab"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Prabhat"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/collect-submitted-report-detail?id=2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/collect-submitted-report-detail?id=2",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"collect-submitted-report-detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/collected-report-hospital",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/collected-report-hospital",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"collected-report-hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-hospital-sample?id=1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-hospital-sample?id=1",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-hospital-sample"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/add-submitted-report",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "hospital_id",
+							"value": "1",
+							"type": "default"
+						},
+						{
+							"key": "lt_name",
+							"value": "Rahul",
+							"type": "default"
+						},
+						{
+							"key": "designation",
+							"value": "Lab Technician",
+							"type": "default"
+						},
+						{
+							"key": "digital_signature",
+							"value": "2022-12-27-63aaac7315876.png",
+							"type": "default"
+						},
+						{
+							"key": "sample_selected_id",
+							"value": "[1,2,15,16]",
+							"type": "default"
+						},
+						{
+							"key": "submit_hospital_sample_meter_photo",
+							"value": "2022-12-27-63aa955743dbf.png",
+							"type": "default"
+						},
+						{
+							"key": "submit_hospital_sample_date_time",
+							"value": "03/01/2023, 17:00 PM",
+							"type": "default"
+						},
+						{
+							"key": "submit_hospital_kilometer",
+							"value": "200",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/add-submitted-report",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-submitted-report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/all-submitted-report-count",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/all-submitted-report-count",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"all-submitted-report-count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-report-hospital",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-report-hospital",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-report-hospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/search-submitted-report-hospital?name=savani",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/search-submitted-report-hospital?name=savani",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"search-submitted-report-hospital"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "savani"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://mjk.workfordemo.in/api/submitted-report-hospital-detail?id=1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "178|shfPZNbwkghe9C2tMdMnt6FevCA0MeeVy1OK3bxW",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://mjk.workfordemo.in/api/submitted-report-hospital-detail?id=1",
+					"protocol": "http",
+					"host": [
+						"mjk",
+						"workfordemo",
+						"in"
+					],
+					"path": [
+						"api",
+						"submitted-report-hospital-detail"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

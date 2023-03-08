@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "1e3ea63f-72b8-4672-8514-37b734064202",
+		"name": "localapi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "mjk",
+			"item": [
+				{
+					"name": "http://mjk.workfordemo.in/api/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Zarna Test",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "zarna02@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "mobile",
+									"value": "4545454545",
+									"type": "default"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "default"
+								},
+								{
+									"key": "device_id",
+									"value": "73234567",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://mjk.workfordemo.in/api/signin",
+							"protocol": "http",
+							"host": [
+								"mjk",
+								"workfordemo",
+								"in"
+							],
+							"path": [
+								"api",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://mjk.workfordemo.in/api/get-hospital",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://mjk.workfordemo.in/api/get-hospital",
+							"protocol": "http",
+							"host": [
+								"mjk",
+								"workfordemo",
+								"in"
+							],
+							"path": [
+								"api",
+								"get-hospital"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Zarna Patel",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "unitech.zarna7@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "mobile",
+							"value": "1212121212",
+							"type": "default"
+						},
+						{
+							"key": "image",
+							"value": "",
+							"type": "default"
+						},
+						{
+							"key": "device_id",
+							"value": "12423",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
