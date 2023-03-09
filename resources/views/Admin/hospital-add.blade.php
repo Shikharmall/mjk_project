@@ -52,8 +52,8 @@ $("#imgInp").change(function(){
                     <option value="" selected disabled>{{('Select District')}}</option>
                     @foreach($add_district as $p)
                     <option value="{{$p->district_id}}"
-                      @if(!empty($lab))
-                      @if($lab->district_id == $p->district_id)
+                      @if(!empty($hospital))
+                      @if($hospital->district_id == $p->district_id)
                         selected
                       @endif
                       @endif>{{$p->name}}</option>
