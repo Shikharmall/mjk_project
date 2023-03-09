@@ -58,8 +58,9 @@ class HospitalController extends Controller
 
     public function edit($hospital_id)
     {
+        $add_district = add_district::orderBy('name','ASC')->get();
         $hospital = add_hospital::where('hospital_id',$hospital_id)->orderBy('hospital_id','DESC')->first();
-        return view('Admin/hospital-add',compact('hospital','hospital'));
+        return view('Admin/hospital-add',compact('hospital','add_district'));
     }
 
     public function delete($hospital_id)
