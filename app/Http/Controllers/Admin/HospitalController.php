@@ -31,7 +31,6 @@ class HospitalController extends Controller
             $banner->name = $request->name;
             $banner->district_id = $request->district_id;
             $banner->gps_address = $request->gps_address;
-            $banner->district = $request->district;
             $banner->latitude = $request->latitude;
             $banner->longitude = $request->longitude;
             $banner->save();
